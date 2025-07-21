@@ -1,0 +1,413 @@
+/* === General === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Body y fuente base === */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+/* === Navegación === */
+header {
+  background-color: #004080;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Sección Pag Inicio === */
+
+.programas-seccion-inicio {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.titulo-programas h2 {
+  background-color: #0098d4;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+  padding: 20px;
+}
+
+.titulo-programas span {
+  color: #00f5f0;
+  font-weight: bold;
+}
+
+.descripcion-programas-inicio {
+  margin: 20px auto;
+  font-size: 18px;
+  max-width: 800px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.contenedor-programas-inicio {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.programa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.programa img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+}
+
+.etiqueta {
+  width: 300px;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.naranja {
+  background-color: #ff7f00;
+}
+
+.verde {
+  background-color: #00bfa5;
+}
+
+/* === Sección Novedades === */
+main {
+  min-height: 80vh;
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+#novedades {
+  margin-bottom: 1.5rem;
+}
+
+#novedades h2 {
+  color: #004080;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#selectorNovedades,
+#btnNoticias {
+  margin: 1rem 0;
+  padding: 0.7rem;
+  font-size: 1rem;
+}
+
+#selectorNovedades {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#btnNoticias {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnNoticias:hover {
+  background-color: #0059b3;
+}
+
+/* === Contenedor de noticias === */
+#noticiasContainer {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.noticia {
+  background-color: #e6f0ff;
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #004080;
+}
+
+.noticia h3 {
+  margin-bottom: 0.5rem;
+  color: #003366;
+}
+
+.noticia a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.noticia a:hover {
+  text-decoration: underline;
+}
+/* Contenedor principal de Mapeo */
+.empresas-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+/* Filtros de Mapeo */
+.filtros {
+  flex: 1 1 250px;
+  max-width: 250px;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.169);
+}
+
+.filtros h3 {
+  margin-bottom: 1rem;
+}
+
+.filtros label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.filtros input,
+.filtros select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+}
+.titulo-descripcion{
+  text-align: center;
+  padding: 2.5rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.8rem;
+  color: #004080;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  background-image: url('../assets/img/fondoMapeo.jpeg');
+}
+
+/* Tarjetas de empresas */
+.tarjetas-empresas {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.tarjeta {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.277);
+  cursor: pointer;
+}
+
+.tarjeta img {
+  width: 100px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.tarjeta h4 {
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta span {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.paginacion button {
+  padding: 0.5rem 1rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.paginacion button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.paginacion span {
+  font-weight: bold;
+}
+
+
+
+/* === Footer === */
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #80c1ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  margin-top: 1rem;
+  width: 100px;
+}
+/* === Logo y botón hamburguesa === */
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #004080;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+
+/* Ocultar menú por defecto en móvil */
+#mainNav {
+  display: none;
+  background-color: #004080;
+}
+
+#mainNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  text-align: center;
+}
+
+#mainNav li {
+  border-top: 1px solid #ccc;
+}
+
+#mainNav a {
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+#mainNav a:hover {
+  background-color: #003366;
+}
+
+/* Mostrar menú si tiene clase "open" */
+#mainNav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 600px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #mainNav {
+    display: flex !important;
+    justify-content: center;
+    background-color: #004080;
+  }
+
+  #mainNav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  #mainNav li {
+    border: none;
+  }
+
+  #mainNav a {
+    padding: 1rem;
+  }
+}
+/* === Responsive: Desktop === */
+@media (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  #noticiasContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  #noticiasContainer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

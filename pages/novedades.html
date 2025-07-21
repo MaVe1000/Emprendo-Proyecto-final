@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novedades</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-menu">
+        <span class="logo">Emprendo</span>
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="/EMPRENDO/pages/programas.html">Programas</a></li>
+          <li><a href="/EMPRENDO/pages/novedades.html">Novedades</a></li>
+          <li><a href="/EMPRENDO/pages/mapeo.html">Mapeo</a></li>
+          <li><a href="/EMPRENDO/pages/contacto.html">Contacto</a></li>
+          <li><a href="/EMPRENDO/pages/login.html">Inscripción</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="titulo-descripcion">
+      Mantente al día con las últimas noticias y eventos.
+    </h1>
+    <!-- Contenido principal -->
+    <div class="registro-evento">
+      <h2>Inscríbete</h2>
+      <p>
+        Regístrate para participar de nuestro próximo Mega Evento exclusivo para
+        emprendedores.
+      </p>
+      <button class="btn-formEvento" id="btnRegistroEvento">Inscribirse</button>
+    </div>
+    <main>
+      <section id="novedades">
+        <h2>Novedades</h2>
+        <p>
+          Selecciona un área de interés para ver las últimas novedades
+          relacionadas con la tecnología, negocios, salud, educación, turismo,
+          arte y cultura, o deporte .
+        </p>
+      </section>
+
+      <select id="selectorNovedades">
+        Seleccione su área de interés
+        <option value="tecnologia">Tecnología</option>
+        <option value="negocios">Negocios</option>
+        <option value="salud">Salud</option>
+        <option value="educacion">Educación</option>
+        <option value="turismo">Turismo</option>
+        <option value="arte">Arte y Cultura</option>
+        <option value="deporte">Deporte</option>
+      </select>
+      <button id="btnNoticias">Buscar</button>
+
+      <div id="noticiasContainer">
+        <!-- Aquí se mostrarán las noticias -->
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Emprendo. Todos los derechos reservados.</p>
+      <p>
+        <a href="/EMPRENDO/pages/contacto.html">Contacto</a> |
+        <a href="/EMPRENDO/pages/privacidad.html">Política de Privacidad</a> |
+        <a href="/EMPRENDO/pages/terminos.html">Términos de Servicio</a>
+      </p>
+      <p>
+        Síguenos en:
+        <a href="https://www.facebook.com/Emprendo" target="_blank">Facebook</a>
+        |
+        <a href="https://www.twitter.com/Emprendo" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com/Emprendo" target="_blank"
+          >Instagram</a
+        >
+      </p>
+      <p>Realizado por GRUPO 10</p>
+      <img src="../assets/img/Grupo_10.PNG" alt="Logo Grupo 10" />
+    </footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
