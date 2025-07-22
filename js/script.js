@@ -64,58 +64,15 @@ document.getElementById("btnNoticias").addEventListener("click", () => {
     });
 });
 /*Filtro para Mapeo de Empresas*/
-const empresas = [
-  { nombre: "Agrofy", sector: "AgTech", etapa: "Series C", logo: "agrofy.png" },
-  { nombre: "Bigbox", sector: "Comercio", etapa: "Seed", logo: "bigbox.png" },
-  {
-    nombre: "Coderhouse",
-    sector: "EdTech",
-    etapa: "Series A",
-    logo: "coderhouse.png",
-  },
-  // Agregá más empresas
-];
-
-const grid = document.getElementById("empresasGrid");
-
-// Función para renderizar tarjetas
-function mostrarEmpresas(lista) {
-  grid.innerHTML = "";
-  lista.forEach((emp) => {
-    const div = document.createElement("div");
-    div.className = "tarjeta";
-    div.innerHTML = `
-      <img src="assets/logos/${emp.logo}" alt="${emp.nombre}" />
-      <h4>${emp.nombre}</h4>
-      <span>${emp.sector}</span><br />
-      <span>${emp.etapa}</span>
-    `;
-    grid.appendChild(div);
+function filtrarSectorEmpresas() {
+  const sector = document.getElementById('filtroSector').value;
+  const allCards = document.querySelectorAll('.tarjetas-empresas .card');
+  
+  allCards.forEach(card => {
+    if (sector === 'todos' || card.classList.contains(sector)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
   });
-}
-
-// Filtrar por sector o etapa
-document
-  .getElementById("filtroSector")
-  .addEventListener("change", filtrarEmpresas);
-document
-  .getElementById("filtroEtapa")
-  .addEventListener("change", filtrarEmpresas);
-document
-  .getElementById("filtroNombre")
-  .addEventListener("input", filtrarEmpresas);
-
-function filtrarEmpresas() {
-  const sector = document.getElementById("filtroSector").value;
-  const etapa = document.getElementById("filtroEtapa").value;
-  const nombre = document.getElementById("filtroNombre").value.toLowerCase();
-
-  const filtradas = empresas.filter((emp) => {
-    const coincideSector = sector === "todos" || emp.sector === sector;
-    const coincideEtapa = etapa === "todos" || emp.etapa === etapa;
-    const coincideNombre = emp.nombre.toLowerCase().includes(nombre);
-    return coincideSector && coincideEtapa && coincideNombre;
-  });
-
-  mostrarEmpresas(filtradas);
 }

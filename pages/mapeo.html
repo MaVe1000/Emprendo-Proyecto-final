@@ -20,116 +20,184 @@
       <nav id="mainNav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
-          <li><a href="programas.html">Programas</a></li>
-          <li><a href="novedades.html">Novedades</a></li>
-          <li><a href="mapeo.html">Mapeo</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="login.html">Inscripción</a></li>
+          <li><a href="/pages/programas.html">Programas</a></li>
+          <li><a href="/pages/novedades.html">Novedades</a></li>
+          <li><a href="/pages/mapeo.html">Mapeo</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/login.html">Inscripción</a></li>
         </ul>
       </nav>
     </header>
-<h1 class="titulo-descripcion">
-        Descubrí las empresas más innovadoras y disruptivas del país.       
-</h1>
+    <h1 class="titulo-descripcion">
+      Descubrí las empresas más innovadoras y disruptivas del país.
+    </h1>
     <!-- Contenido principal -->
     <main class="empresas-container">
       <!-- Filtros a la izquierda -->
       <aside class="filtros">
-        <h3>Filtrar Resultados</h3>
-        <label>Nombre</label>
-        <input type="text" id="filtroNombre" />
+        <div class="contenedor-aside">
+          <h3 class="subtituloFiltro-Mapeo">Selecciona las Empresas por:</h3>
 
-        <label>Sector</label>
-        <select id="filtroSector">
-          <option value="todos">Todos</option>
-          <option value="AgTech">AgTech</option>
-          <option value="SaaS">SaaS</option>
-          <option value="FinTech">FinTech</option>
-          <!-- Agregar más sectores -->
-        </select>
+          <h4>Sector</h4>
+          <select id="filtroSector" onchange="filtrarSectorEmpresas()">
+            <option value="todos">Todos los Sectores</option>
+            <option value="agTech">AgTech</option>
+            <option value="saas">SaaS</option>
+            <option value="finTech">FinTech</option>
+            <option value="otras">Otras</option>
+          </select>
+        </div>
 
-        <label>Etapa</label>
-        <select id="filtroEtapa">
-          <option value="todos">Todos</option>
-          <option value="Seed">Seed</option>
-          <option value="Series A">Series A</option>
-          <option value="Series C">Series C</option>
-        </select>
+        <div class="contenedor-aside">
+          <h4>Sumá tu Startup</h4>
+         
+            <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/bf50fd37-09ae-406d-bc90-9904bf867956/yvfSwoOtRC.lottie" style="width: 180px;height: 180px" speed="1" autoplay loop></dotlottie-wc>
+         
+          <p>
+            Si sos una startup innovadora y querés sumarte a nuestro mapeo,
+            contactanos y completá el formulario.
+          </p>
+          <a href="/pages/contacto.html" class="btn btn-primary">
+            Postular mi Startup
+          </a>
+        </div>
+
+        <div class="contenedor-aside">
+          <h4>Participa del Mega Evento</h4>
+          <p>
+            Se viene el evento más grande de startups del país. Conocé las
+            empresas más innovadoras y conectá con inversores y mentores.
+            Participá de charlas, paneles y networking.
+          </p>
+          <a href="/pages/inscripcion.html" class="btn btn-primary">
+            Completar Inscripción
+          </a>
+        </div>
       </aside>
 
       <!-- Tarjetas de empresas -->
       <section class="tarjetas-empresas" id="empresasGrid">
-        <div class="tarjeta">
-          <h3>Empresa 1</h3>
-          <p>Sector: AgTech</p>
-          <p>Etapa: Seed</p>
-          <p>Descripción breve de la empresa 1.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 2</h3>
-          <p>Sector: SaaS</p>
-          <p>Etapa: Series A</p>
-          <p>Descripción breve de la empresa 2.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 3</h3>
-          <p>Sector: FinTech</p>
-          <p>Etapa: Series C</p>
-          <p>Descripción breve de la empresa 3.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 4</h3>
-          <p>Sector: AgTech</p>
-          <p>Etapa: Seed</p>
-          <p>Descripción breve de la empresa 4.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 5</h3>
-          <p>Sector: SaaS</p>
-          <p>Etapa: Series A</p>
-          <p>Descripción breve de la empresa 5.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 6</h3>
-          <p>Sector: FinTech</p>
-          <p>Etapa: Series C</p>
-          <p>Descripción breve de la empresa 6.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 7</h3>
-          <p>Sector: AgTech</p>
-          <p>Etapa: Seed</p>
-          <p>Descripción breve de la empresa 7.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 8</h3>
-          <p>Sector: SaaS</p>
-          <p>Etapa: Series A</p>
-          <p>Descripción breve de la empresa 8.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 9</h3>
-          <p>Sector: FinTech</p>
-          <p>Etapa: Series C</p>
-          <p>Descripción breve de la empresa 9.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 10</h3>
-          <p>Sector: AgTech</p>
-          <p>Etapa: Seed</p>
-          <p>Descripción breve de la empresa 10.</p>
-        </div>
-        <div class="tarjeta">
-          <h3>Empresa 11</h3>
-          <p>Sector: SaaS</p>
-          <p>Etapa: Series A</p>
-          <p>Descripción breve de la empresa 11.</p>
-        </div>
-        <!-- Controles de paginación -->
-        <div class="paginacion" id="paginacion">
-          <button id="prevPag">&laquo; Anterior</button>
-          <span id="paginaActual">1</span>
-          <button id="nextPag">Siguiente &raquo;</button>
+        <div class="cards">
+          <div class="card finTech">
+            <img src="../assets/img/koibanx.png" />
+          </div>
+          <div class="card agTech">
+            <img src="../assets/img/michroma.png" />
+          </div>
+          <div class="card finTech">
+            <img src="../assets/img/mobbex.png" />
+          </div>
+
+          <div class="card finTech">
+            <img src="../assets/img/123Seguro.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/kigui.png" />
+          </div>
+          <div class="card finTech">
+            <img src="../assets/img/kimber.png" />
+          </div>
+
+          <div class="card otras">
+            <img src="../assets/img/kitchenita.png" />
+          </div>
+          <div class="card agTech">
+            <img src="../assets/img/NPKS.png" />
+          </div>
+          <div class="card finTech">
+            <img src="../assets/img/ProntoCobro.png" />
+          </div>
+
+          <div class="card otras">
+            <img src="../assets/img/bigbox.png" />
+          </div>
+          <div class="card agTech">
+            <img src="../assets/img/agrofy.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/aper.png" />
+          </div>
+
+          <div class="card saas">
+            <img src="../assets/img/artplacer.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/belong.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/blueStarGroup.png" />
+          </div>
+
+          <div class="card agTech">
+            <img src="../assets/img/bioceres.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/conexia.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/coderhouse.png" />
+          </div>
+
+          <div class="card otras">
+            <img src="../assets/img/clicoh.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/frizata.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/fudo.png" />
+          </div>
+
+          <div class="card finTech">
+            <img src="../assets/img/geopagos.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/etermax.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/filadd.png" />
+          </div>
+
+          <div class="card finTech">
+            <img src="../assets/img/fligoo.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/degitalHouse.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/despegar.png" />
+          </div>
+
+          <div class="card otras">
+            <img src="../assets/img/egg.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/elevva.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/emiLabs.png" />
+          </div>
+
+          <div class="card otras">
+            <img src="../assets/img/envioPack.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/globant.png" />
+          </div>
+          <div class="card saas">
+            <img src="../assets/img/go2future.png" />
+          </div>
+
+          <div class="card saas">
+            <img src="../assets/img/goIntegro.png" />
+          </div>
+          <div class="card otras">
+            <img src="../assets/img/tiendaNube.png" />
+          </div>
+          <div class="card finTech">
+            <img src="../assets/img/uala.png" />
+          </div>
         </div>
       </section>
     </main>
