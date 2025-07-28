@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novedades</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body id="formulario-inscripcion">
+    <header>
+      <div class="header">
+        <img
+          src="../assets/img/emprendo-logo-blanco.png"
+          id="logo-emprendo"
+          alt="Logo Emprendo"
+        />
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="/pages/programas.html">Programas</a></li>
+          <li><a href="/pages/novedades.html">Novedades</a></li>
+          <li><a href="/pages/mapeo.html">Mapeo</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/formularioRegistro.html">Inscripción</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contenedor-inscripcion">
+      <h1 class="">📋 Lista de Participantes</h1>
+      <h2>¡Bienvenido al Mega Evento de Emprendedores 2025!</h2>
+      <p>
+        Aquí podrás registrar a los participantes y conocer más sobre sus
+        emprendimientos.
+      </p>
+      <p>
+        Si tienes alguna duda, puedes contactarnos a través de nuestro correo
+        electrónico:
+        <a href="mailto:grupo10@mail.com">GRUPO 10</a>
+      </p>
+
+      <div id="saludo"></div>
+    </section>
+
+    <section id="preguntaStorage">
+      <label for="diaEvento">¿En qué día del evento querés asistir?</label>
+      <select id="diaEvento" required>
+        <option value="" disabled selected>Seleccioná un día</option>
+        <option value="viernes">Viernes</option>
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+      </select>
+      <button onclick="guardarEventoFavorito()">Guardar</button>
+    </section>
+
+    <form id="formulario">
+      <h2>Agregar nuevo participante</h2>
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="number" id="edad" placeholder="Edad" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <h2>Datos del Emprendimiento</h2>
+      <input
+        type="text"
+        id="nombre_Emprendimiento"
+        placeholder="Nombre del Emprendimiento"
+        required
+      />
+      <section id="datosEmprendimiento">
+        <label><strong>Rubro del emprendimiento:</strong></label>
+        <div>
+          <label>
+            <input type="radio" name="rubro" value="Tecnología" required />
+            Tecnología
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Agropecuaria/Ganadera" />
+            Agropecuaria/Ganadera
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Comercio" />
+            Comercio
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Manualidades" />
+            Manualidades
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Educación" />
+            Educación
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Deportivo" />
+            Deportivo
+          </label>
+          <label>
+            <input type="radio" name="rubro" value="Turístico" />
+            Turístico
+          </label>
+        </div>
+      </section>
+      <button type="submit">Agregar participante</button>
+    </form>
+
+    <h3 id="participantes-registrados">PARTICIPANTES REGISTRADOS:</h3>
+    <ul id="listaUsuarios"></ul>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Emprendo. Todos los derechos reservados.</p>
+      <p>
+        <a href="contacto.html">Contacto</a> |
+        <a href="privacidad.html">Política de Privacidad</a> |
+        <a href="terminos.html">Términos de Servicio</a>
+      </p>
+      <p>Realizado por GRUPO 10</p>
+      <img
+        src="../assets/img/Grupo_10.PNG"
+        alt="Logo Grupo 10"
+        style="width: 110px"
+      />
+    </footer>
+    <script src="../js/app.js"></script>
+  </body>
+</html>

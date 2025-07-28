@@ -22,7 +22,6 @@ Este es un proyecto grupal desarrollado por tres integrantes como parte de nuest
 ## 🛠️ Tecnologías Utilizadas
 
 - **HTML5, CSS3 y JavaScript**
-- **Bootstrap 5** (para diseño responsive y componentes)
 - **News API** (https://newsapi.org/) para obtener noticias según categoría
 - **LocalStorage** para guardar los datos del formulario sin necesidad de servidor
 

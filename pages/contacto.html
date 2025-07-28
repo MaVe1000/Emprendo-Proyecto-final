@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emprendo</title>
+    <link rel="icon" type="image/x-icon" href="../assets/img/emprendedor.png" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img src="../assets/img/emprendo-logo-blanco.png" id="logo-emprendo" />
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+      </div>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="/pages/programas.html">Programas</a></li>
+          <li><a href="/pages/novedades.html">Novedades</a></li>
+          <li><a href="/pages/mapeo.html">Mapeo</a></li>
+          <li><a href="/pages/contacto.html">Contacto</a></li>
+          <li><a href="/pages/formularioRegistro.html">Inscripción</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="titulo-descripcion">
+      ¿Tenés dudas, sugerencias o querés sumarte? ¡Escribinos!
+    </h1>
+
+    <!-- Contenido principal -->
+    <main>
+      <!-- formulario de contacto en html y css -->
+
+      <section class="contact-container">
+        <h2>Escribinos tu consulta</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre completo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Tu nombre completo"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="ejemplo@email.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="nombredelEmprendimiento" class="form-label"
+              >Nombre del emprendimiento</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="nombredelEmprendimiento"
+              placeholder="Escribe tu emprendimiento"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Tu consulta</label>
+            <input
+              type="text"
+              class="form-control"
+              id="message"
+              placeholder="Dejanos tu mensaje"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn-contact">Enviar consulta</button>
+        </form>
+      </section>
+      <section class="Title">
+        <h2>Encontranos en:</h2>
+      </section>
+      <div class="Mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210292.53585343406!2d-58.64352012867359!3d-34.558090500611044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1753296460407!5m2!1sen!2sar"
+          width="250"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Emprendo. Todos los derechos reservados.</p>
+      <p>
+        <a href="/EMPRENDO/pages/contacto.html">Contacto</a> |
+        <a href="/EMPRENDO/pages/privacidad.html">Política de Privacidad</a> |
+        <a href="/EMPRENDO/pages/terminos.html">Términos de Servicio</a>
+      </p>
+      <p>
+        Síguenos en:
+        <a href="https://www.facebook.com/Emprendo" target="_blank">Facebook</a>
+        |
+        <a href="https://www.twitter.com/Emprendo" target="_blank">Twitter</a> |
+        <a href="https://www.instagram.com/Emprendo" target="_blank"
+          >Instagram</a
+        >
+      </p>
+      <p>Realizado por GRUPO 10</p>
+      <img src="../assets/img/Grupo_10.PNG" alt="Logo Grupo 10" />
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
