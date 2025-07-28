@@ -9,6 +9,10 @@ Este es un proyecto grupal desarrollado por tres integrantes como parte de nuest
 
 ---
 
+## 📹 Video demostrativo
+
+https://github.com/user-attachments/assets/e3693833-b958-423b-a58b-8d3419191fd0
+
 ## 👨‍👩‍👧‍👦 Integrantes del equipo - Grupo 10
 
 | Nombre y Apellido     | Correo Electrónico        |
@@ -56,7 +60,11 @@ Este es un proyecto grupal desarrollado por tres integrantes como parte de nuest
 
 ├── js/
 
+│   └── app.js
+
 │   └── script.js
+
+│   └── scriptNovedades.js
 
 ├── css/
 
@@ -96,4 +104,8 @@ Si querés darnos feedback o tenés alguna duda sobre el proyecto, podés escrib
 ## ❤️ Proyecto realizado con dedicación y colaboración por Grupo 10
 
 > Si te gustó este proyecto, no olvides dejar una ⭐ en el repo.
+
+
+
+
 
